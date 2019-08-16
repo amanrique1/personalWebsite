@@ -96,34 +96,86 @@
     <h3 id="interests">Hobbies and Interests</h3>
     <hr>
     <div class="row">
-        <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-table-tennis text-primary sr-icons active"></i>
-              <h3>Sports</h3>
-              <p class="text-muted">I watch almost all the games of the Barcelona, NBA games and some tennis matches. I used
-                to practice table tennis but now I just play football with my friends in the weekends</p>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box">
+          <i class="fa fa-4x fa-table-tennis text-primary sr-icons active"></i>
+          <h3>Sports</h3>
+          <p class="text-muted">I watch almost all the games of the Barcelona, NBA games and some tennis matches. I used
+            to practice table tennis but now I just play football with my friends in the weekends</p>
+          <!-- Trigger/Open The Modal -->
+          <button id="myBtn" class="btn btn-seeMore btn-lg page-scroll" onclick="modal('myModal','myBtn',0)">See
+            More</button>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/ue1NT3QhuVU" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </div>
+
           </div>
+        </div>
+      </div>
       <div class="col-lg-3 col-md-6 text-center">
         <div class="service-box">
           <i class="fa fa-4x fa-music text-primary sr-icons active"></i>
           <h3>Music</h3>
           <p class="text-muted">I love to listen to music all the time, while coding, playing FIFA, etc.
             It is also a way that I use to get relaxed</p>
+          <!-- Trigger/Open The Modal -->
+          <button id="myBtn2" class="btn btn-seeMore btn-lg page-scroll" onclick="modal('myModal2','myBtn2',1)">See
+            More</button>
+
+          <!-- The Modal -->
+          <div id="myModal2" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/ue1NT3QhuVU" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+
+          </div>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 text-center">
         <div class="service-box">
           <i class="fa fa-4x fa-code text-primary sr-icons active"></i>
           <h3>Code</h3>
-          <p class="text-muted">Of course, this what I do. Coding is the way that I use express myself using technology</p>
+          <p class="text-muted">Of course, this what I do. Coding is the way that I use to express myself using
+            technology</p>
+          <a href="https://github.com/amanrique1" target="_blank" class="btn btn-seeMore btn-lg page-scroll">See
+            More</a>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 text-center">
         <div class="service-box">
           <i class="fa-4x fa fa-futbol text-primary sr-icons active"></i>
           <h3>FIFA</h3>
-          <p class="text-muted">Is a tradition to play FIFA and drink some beer with my friends at least one time per week</p>
+          <p class="text-muted">Is a tradition to play FIFA and drink some beer with my friends at least one time per
+            week</p>
+          <!-- Trigger/Open The Modal -->
+          <button id="myBtn3" class="btn btn-seeMore btn-lg page-scroll" onclick="modal('myModal3','myBtn3',2)">See
+            More</button>
+
+          <!-- The Modal -->
+          <div id="myModal3" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/j4n1Yb6fPaQ" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
@@ -195,7 +247,7 @@
           <div class="col-sm-6 col-md-3 col-lg-3 web">
             <div class="portfolio-item">
               <div class="hover-bg">
-                <a href="https://github.com/amanrique1/finversionScraper/"  target="_blank">
+                <a href="https://github.com/amanrique1/finversionScraper/" target="_blank">
                   <div class="hover-text">
                     <h4>Real Estate Scraper</h4>
                     <small>Python</small>
@@ -301,7 +353,7 @@
               <div class="timeline-panel">
                 <div class="timeline-heading">
                   <h4>Universidad de los Andes</h4>
-                  <span>Bogota, Colombia</span>
+                  <span>Bogotá, Colombia</span>
                   <h4 class="subheading">Systems and Computing Engineering</h4>
                 </div>
               </div>
@@ -400,6 +452,7 @@
   <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
   <script type="text/javascript" src="js/contact_me.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
 </body>
 
 </html>
