@@ -7,6 +7,11 @@
 #resume{
 	background-color: #7bc3d1 !important; 
 }
+.section-divider{
+	border-bottom: solid;
+	border-width: 7px;
+	border-color: #121d1f;
+}
 /* The Modal (background) */
 .modal {
 	display: none; /* Hidden by default */
@@ -278,7 +283,7 @@ hr {
 	padding: 100px 0;
 	text-align: center;
 	color: #fff;
-	background: url(../img/img1.jpg) no-repeat center top;
+	background: url(../media/img1.jpg) no-repeat center top;
 	background-color: #7bc3d1;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
