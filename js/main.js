@@ -41,7 +41,6 @@ function main() {
             });
 
           }
-          index++;
         }
       })
       //console.log(nagativeValue)
