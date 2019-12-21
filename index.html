@@ -1,397 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Andrés Manrique</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Andrés Manrique</title>
-
-  <!-- Favicons
+		<!-- Favicons
     ================================================== -->
-  <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="media/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="media/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="media/apple-touch-icon-114x114.png">
+		<link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="media/apple-touch-icon.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="media/apple-touch-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="media/apple-touch-icon-114x114.png"
+		/>
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link href="fonts/font-awesome/css/all.css" rel="stylesheet">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link href="fonts/font-awesome/css/all.css" rel="stylesheet" />
 
-  <!-- Stylesheet
+		<!-- Stylesheet
     ================================================== -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link
+			href="http://fonts.googleapis.com/css?family=Lato:400,700,900,300"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300"
+			rel="stylesheet"
+			type="text/css"
+		/>
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+		<!-- Header -->
+		<header id="header">
+			<div class="intro">
+				<div class="container">
+					<div class="row">
+						<div class="intro-text">
+							<h1>Hi, I'm <span class="name">Andrés Manrique</span></h1>
+							<p>Systems and Computing Engineering Student</p>
+							<a href="#about" class="btn btn-default btn-lg page-scroll"
+								>About Me</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Navigation -->
+		<div id="nav">
+			<nav class="navbar navbar-custom">
+				<div class="container">
+					<div class="navbar-header">
+						<button
+							type="button"
+							class="navbar-toggle"
+							data-toggle="collapse"
+							data-target=".navbar-main-collapse"
+						>
+							<i class="fa fa-bars"></i>
+						</button>
+						<a class="navbar-brand page-scroll" href="#page-top"
+							>Andrés Manrique</a
+						>
+					</div>
 
-  <!-- Header -->
-  <header id="header">
-    <div class="intro">
-      <div class="container">
-        <div class="row">
-          <div class="intro-text">
-            <h1>Hi, I'm <span class="name">Andrés Manrique</span></h1>
-            <p>Systems and Computing Engineering Student</p>
-            <a href="#about" class="btn btn-default btn-lg page-scroll">About Me</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- Navigation -->
-  <div id="nav">
-    <nav class="navbar navbar-custom">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i
-              class="fa fa-bars"></i> </button>
-          <a class="navbar-brand page-scroll" href="#page-top">Andrés Manrique</a> </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-          <ul class="nav navbar-nav">
-            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-            <li class="hidden"> <a href="#page-top"></a> </li>
-            <li> <a class="page-scroll" href="#about">About</a> </li>
-            <li> <a class="page-scroll" href="#skills">Skills</a> </li>
-            <li> <a class="page-scroll" href="#projects">Projects</a> </li>
-            <li> <a class="page-scroll" href="#resume">Resume</a> </li>
-            <li> <a class="page-scroll" href="#contact">Contact</a> </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <!-- About Section -->
-  <div id="about" class="section-divider">
-    <div class="container">
-      <div class="section-title text-center center">
-        <h2>About Me</h2>
-        <hr>
-      </div>
-      <div class="row">
-        <div class="col-md-12 text-center"><img src="media/img2.jpg" class="img-responsive" alt="Personal Photo"></div>
-        <div class="col-md-8 col-md-offset-2">
-          <div class="about-text">
-            <p>I was born on, 1 December 1999, in Bucaramanga, Santander. I have always loved technology and solving
-              problems so in 2017 I decided to move to Bogota for studying in one of the best universities in Colombia.
-              At this moment, I'm in the sixth semester of Systems and Computer Engineering at Universidad de Los Andes.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Hobbies and interests-->
-    <h3 id="interests">Hobbies and Interests</h3>
-    <hr>
-    <div class="row">
-      <div class="col-lg-3 col-md-6 text-center">
-        <div class="service-box">
-          <i class="fa fa-4x fa-table-tennis text-primary sr-icons active"></i>
-          <h3>Sports</h3>
-          <p class="text-muted about-text">I watch almost all the games of Barcelona, NBA games and some tennis matches.
-            I used to
-            practice table tennis but now I just play football with my friends on the weekends.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 text-center">
-        <div class="service-box">
-          <i class="fa fa-4x fa-music text-primary sr-icons active"></i>
-          <h3>Music</h3>
-          <p class="text-muted about-text">I love to listen to music all the time, while coding, playing FIFA, etc.
-            It is also a way that I use to get relaxed</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 text-center">
-        <div class="service-box">
-          <i class="fa fa-4x fa-code text-primary sr-icons active"></i>
-          <h3>Code</h3>
-          <p class="text-muted about-text">Of course, this is what I do. Coding is the way that I use to express myself
-            using
-            technology</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 text-center">
-        <div class="service-box">
-          <i class="fa-4x fa fa-futbol text-primary sr-icons active"></i>
-          <h3>FIFA</h3>
-          <p class="text-muted about-text">Is a tradition to play FIFA and drink some beer with my friends at least one
-            time per
-            week</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Skills Section -->
-  <div id="skills" class="text-center section-divider">
-    <div class="container">
-      <div class="section-title center">
-        <h2>Skills</h2>
-        <hr>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span>
-          </span>
-          <h4>Java</h4>
-        </div>
-        <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span>
-          </span>
-          <h4>Python</h4>
-        </div>
-        <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="60"> <span class="percent">60</span>
-          </span>
-          <h4>Javascript</h4>
-        </div>
-        <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span>
-          </span>
-          <h4>Matlab</h4>
-        </div>
-        <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="75"> <span class="percent">75</span>
-          </span>
-          <h4>HTML5</h4>
-        </div>
-        <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span>
-          </span>
-          <h4>CSS3</h4>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <!-- Projects Section -->
-  <div id="projects" class="section-divider">
-    <div class="container">
-      <div class="section-title text-center center">         
-         <h2>Projects</h2>
-        <p>These are some project that I have worked in my university and my free time</p>
-        <hr>
-        <a href="https://github.com/amanrique1" target="_blank"><i class="fab fa-2x fa-github"></i></a>
-      </div>
-      <div class="categories">
-        <div class="clearfix"></div>
-      </div>
-      <div class="row">
-        <div class="portfolio-items">
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
-            <div class="portfolio-item">
-              <div class="hover-bg">
-                <a href="https://github.com/amanrique1/Atpos-Project" target="_blank">
-                  <div class="hover-text">
-                    <h4>AtPos</h4>
-                    <small>Python-Django</small>
-                  </div>
-                  <img src="media/projects/atPos.png" class="img-responsive" alt="AtPos Project">
-                </a> </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
-            <div class="portfolio-item">
-              <div class="hover-bg">
-                <a href="https://github.com/amanrique1/finversionScraper/" target="_blank">
-                  <div class="hover-text">
-                    <h4>Real Estate Scraper</h4>
-                    <small>Python</small>
-                  </div>
-                  <img src="media/projects/scraper.jpeg" class="img-responsive" alt="Real Estate Scraper">
-                </a> </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
-            <div class="portfolio-item">
-              <div class="hover-bg">
-                <a href="https://github.com/Uniandes-ISIS2603-backup/s3-front-Traductor" target="_blank">
-                  <div class="hover-text">
-                    <h4>Traductor App</h4>
-                    <small>Java-Angular</small>
-                  </div>
-                  <img src="media/projects/angular.png" class="img-responsive" alt="Traductor App Project">
-                </a> </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
-            <div class="portfolio-item">
-              <div class="hover-bg">
-                <a href="https://github.com/amanrique1/PaginaBarcelona" target="_blank">
-                  <div class="hover-text">
-                    <h4>Barcelona Practice Website</h4>
-                    <small>PHP-JS</small>
-                  </div>
-                  <img src="media/projects/pagBarcelona.png" class="img-responsive" alt="Barcelona Practice Website">
-                </a> </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Resume Section -->
-  <div id="resume" class="text-center section-divider">
-    <div class="container">
-      <div class="section-title center">
-        <h2>Experience</h2>
-        <hr>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="timeline">
-            <li>
-              <div class="timeline-image">
-                <h4>Aug 2017 <br>
-                  - <br>
-                  Dec 2017 </h4>
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>Universidad de los Andes</h4>
-                  <h4 class="subheading">Teacher Assistant</h4>
-                </div>
-                <div class="timeline-body">
-                  <p>I helped students in algorithm and object-oriented programming course I.
-                    Here I received 5 as my work grade from <strong>Mario Villamizar</strong>.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <h4>Aug 2017 <br>
-                  - <br>
-                  Dec 2017 </h4>
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>Universidad de los Andes</h4>
-                  <h4 class="subheading">Teacher Assistant</h4>
-                </div>
-                <div class="timeline-body">
-                  <p>I helped students in algorithm and object-oriented programming course I.
-                    Here I received 5 as my work grade from <strong>Andres Gomez</strong>.
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="section-title center">
-        <h2>Education</h2>
-        <hr>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="timeline">
-
-            <!-- Education Section-->
-            <li>
-              <div class="timeline-image">
-                <h4>2017
-                  <br>-<br>
-                  Present</h4>
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>Universidad de los Andes</h4>
-                  <span>Bogotá, Colombia</span>
-                  <h4 class="subheading">Systems and Computing Engineering</h4>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <h4><br>July 2019</h4>
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>VGC International College</h4>
-                  <span>Vancouver, Canada</span>
-                  <h4 class="subheading">International Cultural Interactions Certificate</h4>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="timeline-image">
-                <h4><br>June 2019</h4>
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>VGC International College</h4>
-                  <span>Vancouver, Canada</span>
-                  <h4 class="subheading">Business Communication in English Certificate</h4>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <h4>2006 <br>
-                  - <br>
-                  2016 </h4>
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>Aspaen Gimnasio Saucara</h4>
-                  <span>Bucaramanga, Colombia</span>
-                  <h4 class="subheading">High School Degree</h4>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row" style="background-color:black; "> </div>
-  <!-- Contact Section -->
-  <div id="contact" class="text-center">
-    <div class="container">
-      <div class="section-title center">
-        <h2>Contact</h2>
-        <hr>
-      </div>
-      <div class="col-md-8 col-md-offset-2">
-        <div class="col-md-4"> <i class="fa fa-map-marker fa-2x"></i>
-          <p>Cra. 1 #18a 12<br>
-            ML-613 Sala Wuaira <br>
-            Bogotá, Colombia</p>
-        </div>
-        <div class="col-md-4"> <i class="fa fa-envelope fa-2x"></i>
-          <p>a.manrique@uniandes.edu.co</p>
-        </div>
-        <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
-          <p> +57 3176470617</p>
-        </div>
-        <div class="clearfix"></div>
-      </div>
-    </div>
-  </div>
-  <div id="footer">
-    <div class="container text-center">
-      <div class="fnav">
-        <p>Copyright &copy; 2016 John Doe. Designed by <a href="http://www.templatewire.com"
-            rel="nofollow">TemplateWire</a> and modified by <a id="modified" target="_blank"
-            href="https://github.com/amanrique1/personalWebsite">Andrés Manrique</a></p>
-      </div>
-    </div>
-  </div>
-  <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/easypiechart.js"></script>
-  <script type="text/javascript" src="js/jquery.isotope.js"></script>
-  <script type="text/javascript" src="js/jquery.counterup.js"></script>
-  <script type="text/javascript" src="js/waypoints.js"></script>
-  <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-
-</body>
-
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div
+						class="collapse navbar-collapse navbar-right navbar-main-collapse"
+					>
+						<ul class="nav navbar-nav">
+							<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+							<li class="hidden"><a href="#page-top"></a></li>
+							<li><a class="page-scroll" href="#about">About</a></li>
+							<li><a class="page-scroll" href="#skills">Skills</a></li>
+							<li><a class="page-scroll" href="#projects">Projects</a></li>
+							<li><a class="page-scroll" href="#resume">Resume</a></li>
+							<li><a class="page-scroll" href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- About Section -->
+		<div id="about" class="section-divider">
+			<div class="container">
+				<div class="section-title text-center center">
+					<h2>About Me</h2>
+					<hr />
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<img
+							src="media/img2.jpg"
+							class="img-responsive"
+							alt="Personal Photo"
+						/>
+					</div>
+					<div class="col-md-8 col-md-offset-2">
+						<div class="about-text">
+							<p>
+								I was born on, 1 December 1999, in Bucaramanga, Santander. I
+								have always loved technology and solving problems so in 2017 I
+								decided to move to Bogota for studying in one of the best
+								universities in Colombia. At this moment, I'm in the sixth
+								semester of Systems and Computer Engineering at Universidad de
+								Los Andes.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Hobbies and interests-->
+			<h3 id="interests">Hobbies and Interests</h3>
+			<hr />
+			<div class="row">
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box">
+						<i
+							class="fa fa-4x fa-table-tennis text-primary sr-icons active"
+						></i>
+						<h3>Sports</h3>
+						<p class="text-muted about-text">
+							I watch almost all the games of Barcelona, NBA games and some
+							tennis matches. I used to practice table tennis but now I just
+							play football with my friends on the weekends.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box">
+						<i class="fa fa-4x fa-music text-primary sr-icons active"></i>
+						<h3>Music</h3>
+						<p class="text-muted about-text">
+							I love to listen to music all the time, while coding, playing
+							FIFA, etc. It is also a way that I use to get relaxed
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box">
+						<i class="fa fa-4x fa-code text-primary sr-icons active"></i>
+						<h3>Code</h3>
+						<p class="text-muted about-text">
+							Of course, this is what I do. Coding is the way that I use to
+							express myself using technology
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box">
+						<i class="fa-4x fa fa-futbol text-primary sr-icons active"></i>
+						<h3>FIFA</h3>
+						<p class="text-muted about-text">
+							Is a tradition to play FIFA and drink some beer with my friends at
+							least one time per week
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Skills Section -->
+		<div id="skills" class="text-center section-divider">
+			<div class="container">
+				<div class="section-title center">
+					<h2>Skills</h2>
+					<hr />
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6 skill">
+						<span class="chart" data-percent="80">
+							<span class="percent">80</span>
+						</span>
+						<h4>Java</h4>
+					</div>
+					<div class="col-md-4 col-sm-6 skill">
+						<span class="chart" data-percent="70">
+							<span class="percent">70</span>
+						</span>
+						<h4>Python</h4>
+					</div>
+					<div class="col-md-4 col-sm-6 skill">
+						<span class="chart" data-percent="60">
+							<span class="percent">60</span>
+						</span>
+						<h4>Javascript</h4>
+					</div>
+					<div class="col-md-4 col-sm-6 skill">
+						<span class="chart" data-percent="65">
+							<span class="percent">65</span>
+						</span>
+						<h4>Matlab</h4>
+					</div>
+					<div class="col-md-4 col-sm-6 skill">
+						<span class="chart" data-percent="75">
+							<span class="percent">75</span>
+						</span>
+						<h4>HTML5</h4>
+					</div>
+					<div class="col-md-4 col-sm-6 skill">
+						<span class="chart" data-percent="65">
+							<span class="percent">65</span>
+						</span>
+						<h4>CSS3</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Projects Section -->
+		<div id="projects" class="section-divider">
+			<div class="container">
+				<div class="section-title text-center center">
+					<h2>Projects</h2>
+					<p>
+						These are some project that I have worked in my university and my
+						free time
+					</p>
+					<hr />
+					<a href="https://github.com/amanrique1" target="_blank"
+						><i class="fab fa-2x fa-github"></i
+					></a>
+				</div>
+				<div class="categories">
+					<div class="clearfix"></div>
+				</div>
+				<div class="row">
+					<div class="portfolio-items">
+						<div class="col-sm-6 col-md-3 col-lg-3 web">
+							<div class="portfolio-item">
+								<div class="hover-bg">
+									<a
+										href="https://github.com/amanrique1/Atpos-Project"
+										target="_blank"
+									>
+										<div class="hover-text">
+											<h4>AtPos</h4>
+											<small>Python-Django</small>
+										</div>
+										<img
+											src="media/projects/atPos.png"
+											class="img-responsive"
+											alt="AtPos Project"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 col-lg-3 web">
+							<div class="portfolio-item">
+								<div class="hover-bg">
+									<a
+										href="https://github.com/amanrique1/finversionScraper/"
+										target="_blank"
+									>
+										<div class="hover-text">
+											<h4>Real Estate Scraper</h4>
+											<small>Python</small>
+										</div>
+										<img
+											src="media/projects/scraper.jpeg"
+											class="img-responsive"
+											alt="Real Estate Scraper"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 col-lg-3 web">
+							<div class="portfolio-item">
+								<div class="hover-bg">
+									<a
+										href="https://github.com/Uniandes-ISIS2603-backup/s3-front-Traductor"
+										target="_blank"
+									>
+										<div class="hover-text">
+											<h4>Traductor App</h4>
+											<small>Java-Angular</small>
+										</div>
+										<img
+											src="media/projects/angular.png"
+											class="img-responsive"
+											alt="Traductor App Project"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3 col-lg-3 web">
+							<div class="portfolio-item">
+								<div class="hover-bg">
+									<a
+										href="https://github.com/amanrique1/PaginaBarcelona"
+										target="_blank"
+									>
+										<div class="hover-text">
+											<h4>Barcelona Practice Website</h4>
+											<small>PHP-JS</small>
+										</div>
+										<img
+											src="media/projects/pagBarcelona.png"
+											class="img-responsive"
+											alt="Barcelona Practice Website"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Resume Section -->
+		<div id="resume" class="text-center section-divider">
+			<div class="container">
+				<div class="section-title center">
+					<h2>Experience</h2>
+					<hr />
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="timeline">
+							<li class="timeline-inverted">
+								<div class="timeline-image">
+									<h4>
+										Aug 2017 <br />
+										- <br />
+										Dec 2017
+									</h4>
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>Aplicaciones S.A</h4>
+										<h4 class="subheading">Intern Developer</h4>
+									</div>
+									<div class="timeline-body">
+										<p>
+											<strong>Mobile</strong>, <strong>Destok</strong> and
+											<strong>Web</strong> development tailored to the client requirements.
+										</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="timeline-image">
+									<h4>
+										Aug 2017 <br />
+										- <br />
+										Dec 2017
+									</h4>
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>Universidad de los Andes</h4>
+										<h4 class="subheading">Teacher Assistant</h4>
+									</div>
+									<div class="timeline-body">
+										<p>
+											Class assistant for classes on Object Oriented Programming
+											with Java
+										</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="section-title center">
+					<h2>Education</h2>
+					<hr />
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="timeline">
+							<!-- Education Section-->
+							<li>
+								<div class="timeline-image">
+									<h4>
+										2017 <br />-<br />
+										Present
+									</h4>
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>Universidad de los Andes</h4>
+										<span>Bogotá, Colombia</span>
+										<h4 class="subheading">
+											Systems and Computing Engineering
+										</h4>
+									</div>
+								</div>
+							</li>
+							<li class="timeline-inverted">
+								<div class="timeline-image">
+									<h4><br />July 2019</h4>
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>VGC International College</h4>
+										<span>Vancouver, Canada</span>
+										<h4 class="subheading">
+											International Cultural Interactions Certificate
+										</h4>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="timeline-image">
+									<h4><br />June 2019</h4>
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>VGC International College</h4>
+										<span>Vancouver, Canada</span>
+										<h4 class="subheading">
+											Business Communication in English Certificate
+										</h4>
+									</div>
+								</div>
+							</li>
+							<li class="timeline-inverted">
+								<div class="timeline-image">
+									<h4>
+										2006 <br />
+										- <br />
+										2016
+									</h4>
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>Aspaen Gimnasio Saucara</h4>
+										<span>Bucaramanga, Colombia</span>
+										<h4 class="subheading">High School Degree</h4>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="background-color:black; "></div>
+		<!-- Contact Section -->
+		<div id="contact" class="text-center">
+			<div class="container">
+				<div class="section-title center">
+					<h2>Contact</h2>
+					<hr />
+				</div>
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-4">
+						<i class="fa fa-map-marker fa-2x"></i>
+						<p>
+							Cra. 1 #18a 12<br />
+							ML-613 Sala Wuaira <br />
+							Bogotá, Colombia
+						</p>
+					</div>
+					<div class="col-md-4">
+						<i class="fa fa-envelope fa-2x"></i>
+						<p>a.manrique@uniandes.edu.co</p>
+					</div>
+					<div class="col-md-4">
+						<i class="fa fa-phone fa-2x"></i>
+						<p>+57 3176470617</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="container text-center">
+				<div class="fnav">
+					<p>
+						Copyright &copy; 2016 John Doe. Designed by
+						<a href="http://www.templatewire.com" rel="nofollow"
+							>TemplateWire</a
+						>
+						and modified by
+						<a
+							id="modified"
+							target="_blank"
+							href="https://github.com/amanrique1/personalWebsite"
+							>Andrés Manrique</a
+						>
+					</p>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/easypiechart.js"></script>
+		<script type="text/javascript" src="js/jquery.isotope.js"></script>
+		<script type="text/javascript" src="js/jquery.counterup.js"></script>
+		<script type="text/javascript" src="js/waypoints.js"></script>
+		<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
 </html>
